@@ -28,11 +28,13 @@ class ResultActivity : AppCompatActivity() {
 
         val label = intent.getStringExtra(EXTRA_RESULT)
         val score = intent.getFloatExtra(EXTRA_RESULT_SCORE, 0.1F)
+        val scoreFormatted = "%.1f".format(score)
 
         if (label == null) {
             binding.resultText.text = "Nilai Kosong !"
         } else {
-            binding.resultText.text = label +" "+ score + "%"
+            binding.resultText.text = label
+            binding.resultScore.text = scoreFormatted + "%"
         }
     }
 

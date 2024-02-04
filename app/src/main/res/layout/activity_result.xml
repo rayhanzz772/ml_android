@@ -11,8 +11,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/result_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/basic"
+            android:textColor="@color/white"
+            android:text=" RESULT"
+            android:padding="12sp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:textSize="25sp"
+            android:fontFamily="@font/monsterrat_extra_bold"/>
+
         <ImageView
             android:id="@+id/result_image"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:scaleType="fitCenter"
@@ -20,9 +34,21 @@
 
         <TextView
             android:id="@+id/result_text"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_margin="16dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/monsterrat_extra_bold"
+            android:text="@string/result" />
+        <TextView
+            android:id="@+id/result_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="40sp"
+            android:fontFamily="@font/monsterrat_extra_bold"
             android:text="@string/result" />
     </LinearLayout>
 </ScrollView>
